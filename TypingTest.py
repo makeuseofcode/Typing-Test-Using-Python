@@ -27,7 +27,7 @@ def giventime():
 
 def game(event):
     global score, missed
-    if time == 10:
+    if time == 60:
         giventime()
     startlabel.configure(text='Continue..')
     gameinstruction.configure(text='Hit Enter After Typing The Word ')
@@ -44,7 +44,7 @@ startlabel = Label(Mainscreen, text='Typing Game', font=('arial', 30, 'italic bo
 startlabel.place(x=375, y=50)
 
 random.shuffle(words)
-labelforward = Label(Mainscreen, font=('arial', 45, 'italic bold'), fg='green')
+labelforward = Label(Mainscreen, text=' ', font=('arial', 45, 'italic bold'), fg='green')
 labelforward.place(x=350, y=240)
 
 scorelabel = Label(Mainscreen, text='Your Score:', font=('arial', 25, 'italic bold'), fg='maroon')
